@@ -1,5 +1,13 @@
-dataset source: https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023
+dataset source: 
+- https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023
+- https://ai-jobs.net/salaries/download/ (accessed on September 6, 2023)
 
 ## Team
 1. [Ari Adhi Hermawan](https://github.com/aridiawan)
 2. [Faisal Nur Khairudin](https://github.com/fnkhairudin)
+
+References MLflow:
+https://www.youtube.com/watch?v=HZNbLCSdQ2U
+
+References Streamlit:
+https://docs.streamlit.io/library/advanced-features/forms (st.selectbox())
