@@ -8,7 +8,7 @@ model = pickle.load(open('ds-salary-predictor-1.sav', 'rb'))
 
 st.title('Data Science Salary Prediction')
 
-data = pd.read_csv('..\data\processed\modeling_used.csv')
+data = pd.read_csv('modeling_used.csv')
 
 valCol = {}
 cols = data.columns.drop('salary_in_usd')
@@ -47,10 +47,12 @@ def user_report():
     report_data = pd.DataFrame(user_report_data, index=[0])
     return report_data
 
-user_data = user_report()
-st.header('Your Data')
-st.write(user_data)
+if __name__  == "__main__":
+    user_data = user_report()
+    st.header('Your Data')
+    st.write(user_data)
 
-salary = model.predict(user_data)
-st.subheader('Salary Prediction')
-st.subheader('$'+str(np.round(salary[0], 2)))
+    st.subheader('Salary Prediction')
+    if st.button('Predict your salary here!'):
+        salary = model.predict(user_data)
+        st.subheader('$'+str(np.round(salary[0], 2)))
