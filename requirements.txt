@@ -3,3 +3,4 @@ pandas
 scikit_learn
 streamlit
 category_encoders
+xgboost
