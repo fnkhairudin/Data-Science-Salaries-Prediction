@@ -3,15 +3,6 @@ import pickle
 import pandas as pd
 import numpy as np
 
-# load model
-def load_model():
-    file_name = "models/ds-salary-predictor-1.1.sav"
-    with open(file_name, 'rb') as pickled:
-        model = pickle.load(open(file_name, 'rb'))
-
-    return model
-
-model = load_model()
 
 # page view
 def page_view():
@@ -40,6 +31,16 @@ def page_view():
     - abroad: whether or not the employer's main office or contracting branch is located in the same employee's primary country of residence.
     """
     st.markdown(note, unsafe_allow_html=True)
+
+# load model
+def load_model():
+    file_name = "models/ds-salary-predictor-1.1.sav"
+    with open(file_name, 'rb') as pickled:
+        model = pickle.load(open(file_name, 'rb'))
+
+    return model
+
+model = load_model()
 
 # load dataset
 def load_data():
