@@ -19,7 +19,7 @@ Limitation:
 Conclusion:
 1. The best model used for salary prediction is XGBoost.
 2. The prediction results can be off by approximately US$ 38897 (MAE) from the actual price, or in percentage terms the salary prediction will be off by approximately 31.82% (MAPE) from the actual salary.
-3. Experience level is the most importance feature, younger car tend to have higher predicted price.
+3. Experience level is the most importance feature, the higher your experience, the greater the salary is. (in this order: Entry-level / Junior (EN), Mid-level / Intermediate (MI), Senior-level / Expert (SE), Executive-level / Director (EX)).
 
 Recommendation:
 Things that can be done to improve model performance:
