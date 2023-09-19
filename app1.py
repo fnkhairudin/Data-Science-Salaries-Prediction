@@ -36,7 +36,7 @@ def page_view():
 def load_model():
     file_name = "models/ds-salary-predictor-1.1.sav"
     with open(file_name, 'rb') as pickled:
-        model = pickle.load(open(file_name, 'rb'))
+        model = pickle.load(pickled)
 
     return model
 
